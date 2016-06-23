@@ -131,7 +131,7 @@ public class BabydetailFragment extends Fragment  implements OnClickListener{
 		initReceiver();
 
 		String string="aa";
-
+		String stringa="aa";
 
 
 		return inflate;
