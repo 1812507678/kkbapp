@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:background="@color/layout_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:id="@+id/msg_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/assict_text_color" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5.0dip" >
+
+            <View
+                android:id="@+id/msg_top_line"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/msg_time_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2.0dip"
+                android:background="@color/assict_text_color" />
+
+            <View
+                android:id="@+id/msg_bottom_line"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/msg_time_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2.0dip"
+                android:background="@color/assict_text_color" />
+
+            <ImageView
+                android:id="@+id/msg_time_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_other_msg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/bg_msg_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingTop="5.0dip" >
+
+            <ImageView
+                android:id="@+id/msg_type_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_low_voltage" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/msg_type_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/msg_content_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/assict_text_color" />
+
+                <TextView
+                    android:id="@+id/msg_address_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/assict_text_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:src="@drawable/icon_msg_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

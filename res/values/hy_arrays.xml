@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="around_space">
+        <item>@string/cate1</item>
+        <item>@string/scenic</item>
+        <item>@string/hotel</item>
+        <item>@string/metro</item>
+        <item>@string/bank</item>
+        <item>@string/bus_stop</item>
+        <item>@string/gas_station</item>
+        <item>@string/cinema</item>
+    </string-array>
+    <string-array name="around_food">
+        <item>@string/cate</item>
+        <item>@string/chinese_food</item>
+        <item>@string/snack_food</item>
+        <item>@string/sichuan_food</item>
+        <item>@string/western_food</item>
+        <item>@string/hot_pot</item>
+        <item>@string/kfc</item>
+        <item>@string/restaurant</item>
+    </string-array>
+    <string-array name="around_hotel">
+        <item>@string/hotel</item>
+        <item>@string/fast_hotel</item>
+        <item>@string/starred_hotel</item>
+        <item>@string/youth_hostel</item>
+        <item>@string/inn</item>
+        <item>@string/guesthouse</item>
+        <item>@string/prices_hotel</item>
+        <item>@string/resort</item>
+    </string-array>
+    <string-array name="around_relaxation">
+        <item>@string/relaxation</item>
+        <item>@string/cinema</item>
+        <item>KTV</item>
+        <item>@string/pub</item>
+        <item>@string/cafe</item>
+        <item>@string/internet_bar</item>
+        <item>@string/beauty</item>
+        <item>@string/scenic</item>
+    </string-array>
+    <string-array name="around_traffic">
+        <item>@string/traffic</item>
+        <item>@string/bus_stop</item>
+        <item>@string/gas_station</item>
+        <item>@string/park</item>
+        <item>@string/ticket_outlets</item>
+        <item>@string/train_station</item>
+        <item>@string/coach_station</item>
+    </string-array>
+    <string-array name="around_life">
+        <item>@string/live</item>
+        <item>@string/supermarket</item>
+        <item>@string/drugstore</item>
+        <item>ATM</item>
+        <item>@string/bank</item>
+        <item>@string/hospital</item>
+        <item>@string/WC</item>
+        <item>@string/market</item>
+    </string-array>
+    <string-array name="around_sugest">
+        <item>@string/featured</item>
+        <item>@string/fame_scenic</item>
+        <item>@string/featured_cate</item>
+        <item>@string/guesthouse1</item>
+        <item>@string/shopping</item>
+        <item>@string/metro_route</item>
+        <item>@string/airpot_station</item>
+    </string-array>
+    <string-array name="week_array">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+    <string-array name="key_word">
+        <item>@string/tian_an_men</item>
+        <item>@string/oriental_pearl</item>
+        <item>@string/world_window</item>
+        <item>@string/happy_valley</item>
+        <item>@string/jiu_zhai_gou</item>
+        <item>@string/gu_lang_yu</item>
+        <item>@string/li_jiang</item>
+        <item>@string/bing_ma_yong</item>
+        <item>@string/xi_hu</item>
+        <item>@string/shangri_la</item>
+        <item>@string/zhang_jia_jie</item>
+        <item>@string/great_wall</item>
+    </string-array>
+</resources>

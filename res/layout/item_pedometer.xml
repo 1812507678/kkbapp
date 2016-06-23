@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/layout_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/assict_text_color" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_step_num_time" />
+
+            <ImageView
+                android:id="@+id/bottom"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:background="@color/layout_bg_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/item_pedom_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/assict_text_color"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/item_pedom_stepNum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/assict_text_color"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

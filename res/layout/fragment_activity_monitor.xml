@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_fl"
+            android:layout_marginBottom="10.0dip"
+            layout="@layout/map_zoom_button" />
+
+        <FrameLayout
+            android:id="@+id/fragment_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_fl" />
+
+        <FrameLayout
+            android:id="@+id/bottom_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip" >
+
+            <RadioGroup
+                android:id="@+id/navigation_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bottom_layout_color"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/position_query_rb"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bottom_icon_check_s"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/location_checked_btn_d"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="@string/monitor_device_position_title"
+                    android:textColor="@color/assict_text_color"
+                    android:textSize="15.0sp" />
+
+                <RadioButton
+                    android:id="@+id/trajectory_rb"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bottom_icon_check_s"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/track_checked_btn_d"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="@string/monitor_drived_way_title"
+                    android:textColor="@color/assict_text_color"
+                    android:textSize="15.0sp" />
+
+                <RadioButton
+                    android:id="@+id/electronic_fence_rb"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bottom_icon_check_s"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/electronic_fence_checked_btn_d"
+                    android:gravity="center"
+                    android:padding="8.0dip"
+                    android:text="@string/ef_list_btn_text"
+                    android:textColor="@color/assict_text_color"
+                    android:textSize="15.0sp" />
+            </RadioGroup>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_monitor_record"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_transparent_popup"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/find_watch_popup_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15.0dip" >
+
+                <EditText
+                    android:id="@+id/monitor_phone_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/text_edit_bg"
+                    android:hint="@string/monitor_input_mobile_num"
+                    android:inputType="phone"
+                    android:paddingLeft="5.0dip"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip" >
+
+                    <Button
+                        android:id="@+id/affirm_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/confir_btn"
+                        android:text="@string/monitor_monitor"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@id/cancel_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cancel_btn"
+                        android:text="@string/cancel"
+                        android:textColor="@color/tab_home_d" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

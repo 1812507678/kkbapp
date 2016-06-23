@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_color" >
+
+   
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_title" />
+
+        <EditText 
+            android:id="@+id/imei_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="MEID"
+            android:background="@drawable/inputtext_background"/>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <EditText 
+	            android:id="@+id/imei_type"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:layout_margin="20dp"
+	            android:hint="设备类型"
+	            android:background="@drawable/inputtext_background"/>
+            <ImageView 
+                android:id="@+id/iv_showPopup"
+                android:layout_width="30dp"
+           		android:layout_height="30dp"
+           		android:src="@drawable/ic_expand_more_black_24dp"
+           		android:layout_alignParentRight="true"
+           		android:layout_centerVertical="true"
+           		android:layout_marginRight="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_icon2_s"
+            android:text="添加" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+ 	<TextView 
+ 	    android:id="@+id/scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"
+        android:textColor="#FFFFFF"
+        android:padding="10.0dip"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentRight="true"/>
+ 	
+    <include layout="@layout/dialog_shutdown" />
+
+</RelativeLayout>

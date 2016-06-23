@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cur_device_q"
+            android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+        <TextView
+            android:id="@id/power_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/location_mode_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <RadioButton
+            android:id="@+id/normal_mode_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/login_check_btn_s"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip"
+            android:textSize="15sp"
+            android:text="@string/main_normal_mode"
+            android:textColor="@android:color/background_dark" />
+
+        <RadioButton
+            android:id="@+id/precision_mode_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/login_check_btn_s"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip"
+            android:textSize="15sp"
+            android:text="@string/main_preci_mode"
+            android:textColor="@android:color/background_dark" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_dark"
+        android:text="@string/accurate_mode_cut" />
+
+    <Button
+        android:id="@id/confir_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/btn_icon2_s"
+        android:text="@string/ok"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+</LinearLayout>

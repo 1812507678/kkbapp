@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/pay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/pay_hint"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#aaaaaa" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="选择服务方式"
+                android:textColor="#aaaaaa"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/frameLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp" >
+                        
+                         <TextView
+                            android:id="@+id/test_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/One_month_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Three_months_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Six_months_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/A_year_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/forever_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+                        
+                        
+                        <TextView
+                            android:id="@+id/test_pricex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="202元"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/home_icon_line2"
+                        android:showDividers="middle" >
+                        
+                        <RadioButton
+                            android:id="@+id/test_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="测试"
+                            android:checked="true"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/One_month_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="一个月"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/Three_months_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="三个月"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/Six_months_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="半年"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/A_year_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="包年"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/forever_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="终身"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+                        
+                        <RadioButton
+                            android:id="@+id/forever_radiox"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/check_pay_type"
+                            android:paddingLeft="30dp"
+                            android:text="终身sss"
+                            android:textColor="@color/main_color"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="支付方式"
+                    android:textColor="#aaaaaa"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_payType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@drawable/home_icon_line2"
+                    android:showDividers="middle" >
+
+                    <RadioButton
+                        android:id="@+id/radio_wx"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/check_pay_type"
+                        android:checked="true"
+                        android:paddingLeft="30dp"
+                        android:text="微信支付"
+                        android:textColor="@color/main_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_zfb"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@drawable/check_pay_type"
+                        android:paddingLeft="30dp"
+                        android:text="支付宝支付"
+                        android:textColor="@color/main_color"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <Button
+                        android:id="@+id/pay_btn"
+                        style="@style/submit_button_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_login_s"
+                        android:text="@string/pay_ok"
+                        android:textAppearance="@style/TextAppearanceTitleLager"
+                        android:textColor="@drawable/share_color_white_white_s" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

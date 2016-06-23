@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="5.0dip" >
+
+    <TextView
+        android:id="@+id/item_chatto_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/talkback_time"
+        android:maxLength="19"
+        android:padding="5.0dip"
+        android:textAppearance="@style/TextAppearanceHomeSet1Lager"
+        android:textColor="@color/assict_text_color" />
+
+    <LinearLayout
+        android:id="@+id/right_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/item_chatto_new_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6.0dip"
+            android:src="@drawable/icon_has_new"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8.0dip" >
+
+            <TextView
+                android:id="@+id/item_chatto_duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="6&quot;"
+                android:textSize="16.0sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_uploadstate"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sen_fail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:visibility="gone"
+                android:background="@drawable/icon_pop_device_repair"/>
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/item_chatto_message_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3.0dip"
+            android:background="@drawable/chatto_bg_normal"
+            android:gravity="right|center" >
+
+            <TextView
+                android:id="@+id/item_chatto_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="111111"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/item_chatto_voice_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chatto_voice_playing_f3"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/item_chatto_voice_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.ttxgps.gpslocation.CircleImageView
+            android:id="@+id/item_chatto_head_iv"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

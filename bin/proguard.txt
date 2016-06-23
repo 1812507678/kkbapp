@@ -1,0 +1,368 @@
+# view res/layout/activity_main.xml #generated:133
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:622
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:628
+-keep class com.alipay.sdk.auth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:475
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/activity_map_baidu.xml #generated:7
+# view res/layout/activity_msg_detail.xml #generated:14
+# view res/layout/activity_navi_routeplan.xml #generated:12
+# view res/layout/activity_poiresult.xml #generated:51
+# view res/layout/fragment_activity_monitor.xml #generated:11
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view res/layout/raw_mapview_demo.xml #generated:18
+-keep class com.google.android.gms.maps.MapView { <init>(...); }
+
+# view res/layout/basic_demo.xml #generated:18
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class com.ttxgps.gpslocation.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.ttxgps.gpslocation.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:431
+-keep class com.ttxgps.gpslocation.ActivityInfoCentre { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.ttxgps.gpslocation.AddChildActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.ttxgps.gpslocation.BabyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.ttxgps.gpslocation.BabyDetailUpdateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.ttxgps.gpslocation.BabyRelationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.ttxgps.gpslocation.BabySex { <init>(...); }
+
+# view res/layout/activity_account.xml #generated:22
+# view res/layout/activity_baby_detail.xml #generated:37
+# view res/layout/fragment_babydetail.xml #generated:32
+# view res/layout/fragment_home.xml #generated:24
+# view res/layout/fragment_person_center.xml #generated:15
+# view res/layout/item_left_talkback.xml #generated:29
+# view res/layout/item_mybaby.xml #generated:17
+# view res/layout/item_right_talkback.xml #generated:108
+-keep class com.ttxgps.gpslocation.CircleImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.ttxgps.gpslocation.ControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.ttxgps.gpslocation.DateSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:407
+-keep class com.ttxgps.gpslocation.ExpelMosquitoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.ttxgps.gpslocation.FamilyNum { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.ttxgps.gpslocation.FenceSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:342
+-keep class com.ttxgps.gpslocation.ForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.ttxgps.gpslocation.GuardianActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.ttxgps.gpslocation.InfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class com.ttxgps.gpslocation.LocationMode { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.ttxgps.gpslocation.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class com.ttxgps.gpslocation.LoginBindDeviceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.ttxgps.gpslocation.LoginEditBabyInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.ttxgps.gpslocation.MainFragmentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.ttxgps.gpslocation.MapAPP { <init>(...); }
+
+# view AndroidManifest.xml #generated:334
+-keep class com.ttxgps.gpslocation.ModifyPassword { <init>(...); }
+
+# view AndroidManifest.xml #generated:366
+-keep class com.ttxgps.gpslocation.ModifySign { <init>(...); }
+
+# view AndroidManifest.xml #generated:326
+-keep class com.ttxgps.gpslocation.MyBabyActivity { <init>(...); }
+
+# view res/layout/activity_map_google.xml #generated:8
+-keep class com.ttxgps.gpslocation.MyMapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.ttxgps.gpslocation.MyTrace { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class com.ttxgps.gpslocation.MyTrace_More_Baidu { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.ttxgps.gpslocation.MyTrace_More_Google { <init>(...); }
+
+# view AndroidManifest.xml #generated:358
+-keep class com.ttxgps.gpslocation.PedometerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:415
+-keep class com.ttxgps.gpslocation.RecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.ttxgps.gpslocation.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.ttxgps.gpslocation.SelectReplayDate { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.ttxgps.gpslocation.SetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.ttxgps.gpslocation.SetRefreshActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.ttxgps.gpslocation.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.ttxgps.gpslocation.StealthTimeSet { <init>(...); }
+
+# view AndroidManifest.xml #generated:399
+-keep class com.ttxgps.gpslocation.TalkBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.ttxgps.gpslocation.TeamActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:242
+-keep class com.ttxgps.gpslocation.TerminalSetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:635
+-keep class com.ttxgps.gpslocation.ThridStepSetting { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.ttxgps.gpslocation.TimeUpdate { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class com.ttxgps.gpslocation.UpdateStealthTime { <init>(...); }
+
+# view AndroidManifest.xml #generated:350
+-keep class com.ttxgps.gpslocation.ValidationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:318
+-keep class com.ttxgps.gpslocation.WhiteListActivity { <init>(...); }
+
+# view res/layout/activity_edit_babyinfo.xml #generated:32
+# view res/layout/item_guardian.xml #generated:10
+-keep class com.ttxgps.gpslocation.view.CircleImageView { <init>(...); }
+
+# view res/layout/activity_pedometer.xml #generated:22
+-keep class com.ttxgps.gpslocation.view.CircleProgressBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.ttxgps.gpslocation.view.MainActivity { <init>(...); }
+
+# view res/layout/activity_map_google.xml #generated:2
+-keep class com.ttxgps.gpslocation.view.MapWrapperLayout { <init>(...); }
+
+# view res/layout/activity_baby_relation.xml #generated:19
+# view res/layout/modify_sex.xml #generated:13
+-keep class com.ttxgps.gpslocation.view.MultiLayoutRadioGroup { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.ttxgps.msg.MsgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:382
+-keep class com.ttxgps.msg.MsgDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.ttxgps.pay.PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:455
+-keep class com.ttxgps.receiver.ReflushReceiver { <init>(...); }
+
+# view res/layout/toast_set.xml #generated:22
+-keep class com.ttxgps.utils.DateTimeButton { <init>(...); }
+
+# view res/layout/showimage.xml #generated:20
+-keep class com.ttxgps.zoom.GestureImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:423
+-keep class com.ttxgps.zxing.core.CaptureActivity { <init>(...); }
+
+# view res/layout/activity_capture.xml #generated:30
+-keep class com.ttxgps.zxing.core.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:514
+-keep class com.umeng.message.ElectionReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:505
+-keep class com.umeng.message.MessageReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:483
+-keep class com.umeng.message.NotificationProxyBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:525
+-keep class com.umeng.message.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:489
+-keep class com.umeng.message.SystemReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:593
+-keep class com.umeng.message.UmengDownloadResourceService { <init>(...); }
+
+# view AndroidManifest.xml #generated:559
+-keep class com.umeng.message.UmengIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:532
+-keep class com.umeng.message.UmengMessageBootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:576
+-keep class com.umeng.message.UmengMessageCallbackHandlerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:563
+-keep class com.umeng.message.UmengMessageIntentReceiverService { <init>(...); }
+
+# view AndroidManifest.xml #generated:541
+-keep class com.umeng.message.UmengService { <init>(...); }
+
+# view AndroidManifest.xml #generated:599
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:595
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:448
+-keep class com.xtst.gps.wxapi.WXPayEntryActivity { <init>(...); }
+
+# onClick res/layout/activity_thrid_step_setting.xml #generated:142
+# onClick res/layout/activity_thrid_step_setting_bicycle.xml #generated:167
+# onClick res/layout/activity_thrid_step_setting_childrenshoes.xml #generated:142
+# onClick res/layout/activity_thrid_step_setting_pet.xml #generated:167
+# onClick res/layout/activity_thrid_step_setting_robot.xml #generated:142
+# onClick res/layout/activity_thrid_step_setting_schoolbag.xml #generated:143
+# onClick res/layout/activity_thrid_step_setting_smarthome.xml #generated:143
+# onClick res/layout/activity_thrid_step_setting_watch.xml #generated:193
+-keepclassmembers class * { *** nextStep(...); }
+
+# onClick res/layout/activity_baby_detail.xml #generated:136
+# onClick res/layout/activity_baby_detail.xml #generated:176
+# onClick res/layout/activity_baby_detail.xml #generated:219
+# onClick res/layout/activity_baby_detail.xml #generated:283
+# onClick res/layout/activity_baby_detail.xml #generated:322
+# onClick res/layout/activity_baby_detail.xml #generated:364
+# onClick res/layout/activity_baby_detail.xml #generated:37
+# onClick res/layout/activity_baby_detail.xml #generated:415
+# onClick res/layout/activity_baby_detail.xml #generated:467
+# onClick res/layout/activity_baby_detail.xml #generated:51
+# onClick res/layout/activity_baby_detail.xml #generated:510
+# onClick res/layout/activity_baby_detail.xml #generated:94
+# onClick res/layout/activity_edit_babyinfo.xml #generated:119
+# onClick res/layout/activity_edit_babyinfo.xml #generated:152
+# onClick res/layout/activity_edit_babyinfo.xml #generated:183
+# onClick res/layout/activity_edit_babyinfo.xml #generated:217
+# onClick res/layout/activity_edit_babyinfo.xml #generated:260
+# onClick res/layout/activity_edit_babyinfo.xml #generated:303
+# onClick res/layout/activity_edit_babyinfo.xml #generated:32
+# onClick res/layout/activity_edit_babyinfo.xml #generated:337
+# onClick res/layout/activity_edit_babyinfo.xml #generated:47
+# onClick res/layout/activity_edit_babyinfo.xml #generated:81
+# onClick res/layout/activity_login.xml #generated:135
+# onClick res/layout/activity_login.xml #generated:150
+# onClick res/layout/activity_register.xml #generated:166
+# onClick res/layout/activity_register.xml #generated:176
+# onClick res/layout/activity_register.xml #generated:28
+# onClick res/layout/fragment_babydetail.xml #generated:131
+# onClick res/layout/fragment_babydetail.xml #generated:171
+# onClick res/layout/fragment_babydetail.xml #generated:214
+# onClick res/layout/fragment_babydetail.xml #generated:278
+# onClick res/layout/fragment_babydetail.xml #generated:317
+# onClick res/layout/fragment_babydetail.xml #generated:32
+# onClick res/layout/fragment_babydetail.xml #generated:359
+# onClick res/layout/fragment_babydetail.xml #generated:410
+# onClick res/layout/fragment_babydetail.xml #generated:462
+# onClick res/layout/fragment_babydetail.xml #generated:47
+# onClick res/layout/fragment_babydetail.xml #generated:502
+# onClick res/layout/fragment_babydetail.xml #generated:89
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/activity_team.xml #generated:28
+# onClick res/layout/activity_team.xml #generated:37
+-keepclassmembers class * { *** onTopMenuClick(...); }
+
+# onClick res/layout/activity_thrid_step_setting.xml #generated:134
+# onClick res/layout/activity_thrid_step_setting_bicycle.xml #generated:159
+# onClick res/layout/activity_thrid_step_setting_childrenshoes.xml #generated:134
+# onClick res/layout/activity_thrid_step_setting_pet.xml #generated:159
+# onClick res/layout/activity_thrid_step_setting_robot.xml #generated:134
+# onClick res/layout/activity_thrid_step_setting_schoolbag.xml #generated:135
+# onClick res/layout/activity_thrid_step_setting_smarthome.xml #generated:135
+# onClick res/layout/activity_thrid_step_setting_watch.xml #generated:185
+-keepclassmembers class * { *** preStep(...); }
+
+# onClick res/layout/activity_addchild.xml #generated:92
+# onClick res/layout/activity_control.xml #generated:108
+# onClick res/layout/activity_control.xml #generated:13
+# onClick res/layout/activity_control.xml #generated:32
+# onClick res/layout/activity_control.xml #generated:51
+# onClick res/layout/activity_control.xml #generated:70
+# onClick res/layout/activity_control.xml #generated:89
+# onClick res/layout/activity_map_baidu.xml #generated:183
+# onClick res/layout/activity_map_baidu.xml #generated:224
+# onClick res/layout/activity_map_baidu.xml #generated:239
+# onClick res/layout/activity_map_baidu.xml #generated:254
+# onClick res/layout/activity_map_baidu.xml #generated:50
+# onClick res/layout/activity_map_baidu.xml #generated:64
+# onClick res/layout/activity_map_google.xml #generated:121
+# onClick res/layout/activity_map_google.xml #generated:147
+# onClick res/layout/activity_map_google.xml #generated:155
+# onClick res/layout/activity_map_google.xml #generated:175
+# onClick res/layout/activity_map_google.xml #generated:183
+# onClick res/layout/activity_map_google.xml #generated:42
+# onClick res/layout/activity_peoplecontrol.xml #generated:106
+# onClick res/layout/activity_peoplecontrol.xml #generated:125
+# onClick res/layout/activity_peoplecontrol.xml #generated:144
+# onClick res/layout/activity_peoplecontrol.xml #generated:163
+# onClick res/layout/activity_peoplecontrol.xml #generated:182
+# onClick res/layout/activity_peoplecontrol.xml #generated:201
+# onClick res/layout/activity_peoplecontrol.xml #generated:220
+# onClick res/layout/activity_peoplecontrol.xml #generated:23
+# onClick res/layout/activity_peoplecontrol.xml #generated:240
+# onClick res/layout/activity_peoplecontrol.xml #generated:42
+# onClick res/layout/activity_peoplecontrol.xml #generated:61
+# onClick res/layout/activity_peoplecontrol.xml #generated:80
+# onClick res/layout/activity_setting.xml #generated:107
+# onClick res/layout/activity_setting.xml #generated:140
+# onClick res/layout/activity_setting.xml #generated:36
+# onClick res/layout/activity_setting.xml #generated:64
+# onClick res/layout/fragment_elecfence.xml #generated:40
+# onClick res/layout/fragment_elecfence.xml #generated:57
+# onClick res/layout/loading_layout.xml #generated:2
+# onClick res/layout/map_zoom_button.xml #generated:18
+# onClick res/layout/map_zoom_button.xml #generated:53
+# onClick res/layout/map_zoom_button.xml #generated:6
+# onClick res/layout/map_zoom_button.xml #generated:61
+# onClick res/layout/partbar.xml #generated:19
+# onClick res/layout/partbar.xml #generated:28
+# onClick res/layout/partbar.xml #generated:37
+# onClick res/layout/partbar.xml #generated:46
+# onClick res/layout/popview_b.xml #generated:8
+# onClick res/layout/register.xml #generated:237
+-keepclassmembers class * { *** things(...); }
+

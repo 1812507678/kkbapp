@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/update_nickname_msg"
+        android:textAppearance="@style/Text_hoin_blue_16" />
+
+    <EditText
+        android:id="@+id/input_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/layout_width"
+        android:hint="@string/please_input_nickname"
+        android:maxLength="10"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:textColor="#ff1a1a1a"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

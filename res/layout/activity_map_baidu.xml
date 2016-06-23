@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/infobar"
+        android:clickable="true" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_fl"
+        android:layout_marginBottom="60.0dip"
+        layout="@layout/map_zoom_button" />
+    
+    
+    <LinearLayout
+        android:id="@+id/infobar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/process"
+        android:background="#4488aa"
+        android:padding="4dip" >
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="#000000"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="2012/12/12 12:12"
+            android:textColor="#000000"
+            android:textSize="13sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:onClick="things"
+            android:visibility="visible"
+            android:text="@string/request_data"
+            android:textColor="#000000"
+            android:textSize="13sp" >
+        </TextView>
+    </LinearLayout>
+    
+     <LinearLayout
+         android:id="@+id/replayTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/infobar"
+         android:layout_marginTop="10dp"
+         android:background="#884488aa"
+         android:onClick="things"
+         android:visibility="gone"
+         android:layout_centerInParent="true"
+         android:padding="4dip" >
+
+        <TextView
+            android:id="@+id/time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="#000000"
+            android:text="2015/09/09 10:20"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="#000000"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:text="2015/09/09 13:20"
+            android:textColor="#000000"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+    
+        <include
+        android:id="@+id/layout_safety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_below="@+id/replayTime"
+      	android:layout_marginTop="10dp"
+      	android:layout_above="@+id/bottom_fl"
+      	android:visibility="invisible"
+        layout="@layout/fragment_elecfence" />
+     
+
+    <ProgressBar
+        android:id="@+id/process"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/title"
+        android:max="100"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_top_bg"
+        android:padding="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/button_style"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/return_btn" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/car_info"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/reflush"
+                style="@style/button_style"
+                android:background="@drawable/refresh" />
+
+      
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/seek_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     
+        android:background="@drawable/bg_border"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:layout_above="@+id/bottom_fl"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="things"
+            android:src="@drawable/map_play" />
+
+        <SeekBar
+            android:id="@+id/playBar"
+            android:layout_width="fill_parent"
+            android:layout_height="7dip"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:thumb="@null" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/change_map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="70dip"
+        android:visibility="gone" />
+
+ 
+
+    <FrameLayout
+        android:id="@+id/bottom_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/navigation_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_layout_color"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/location_tab"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/bottom_icon_check_s"
+                android:button="@null"
+                android:drawableLeft="@drawable/location_checked_btn_d"
+                android:gravity="center"
+                android:onClick="things"
+                android:padding="8.0dip"
+                android:text="@string/monitor_device_position_title"
+                android:textColor="@color/assict_text_color"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/replay_tab"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/bottom_icon_check_s"
+                android:button="@null"
+                android:drawableLeft="@drawable/track_checked_btn_d"
+                android:gravity="center"
+                android:onClick="things"
+                android:padding="8.0dip"
+                android:text="@string/monitor_drived_way_title"
+                android:textColor="@color/assict_text_color"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/safety_tab"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/bottom_icon_check_s"
+                android:button="@null"
+                android:drawableLeft="@drawable/electronic_fence_checked_btn_d"
+                android:gravity="center"
+                android:onClick="things"
+                android:padding="8.0dip"
+                android:text="@string/ef_list_btn_text"
+                android:textColor="@color/assict_text_color"
+                android:textSize="15.0sp" />
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

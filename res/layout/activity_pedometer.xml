@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_top_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="130.0dip"
+            android:layout_height="130.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5.0dip" >
+
+            <com.ttxgps.gpslocation.view.CircleProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/step_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/step_num_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20.0dip"
+                android:layout_toRightOf="@+id/step_num_tv"
+                android:text="@string/step"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/scale_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/step_num_tv"
+                android:layout_centerHorizontal="true"
+                android:text="0%"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scale_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5.0dip"
+                android:src="@drawable/ic_people" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_data_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/no_recorder"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/pedometer_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+</LinearLayout>

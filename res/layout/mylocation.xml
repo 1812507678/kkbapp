@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/setting_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_location"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:paddingTop="20dip" >
+        
+        <TextView
+            android:id="@+id/device_id_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/my_imei"
+            android:textColor="#00FF00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/device_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="IMEI"
+            android:textColor="#FFFF00"
+            android:textSize="18sp" />
+        
+	    <TextView  
+	    android:id="@+id/my_location"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_marginTop="20sp"
+	    android:textSize="20sp"
+	    android:layout_marginBottom="5dp"
+	    android:text="@string/my_current_location"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+	    />
+	
+	    <TextView  
+		android:id="@+id/lnglat"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="20dp"
+	    android:textSize="18sp"
+	    android:layout_marginBottom="5dp"
+	    android:text="@string/positioning"
+        android:textColor="#FFFF00"
+	    />
+	
+	    <TextView  
+	    android:id="@+id/address"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="20dp"
+	    android:textSize="18sp"
+	    android:text="@string/translating"
+	    android:textColor="#FFFF00"
+	    />
+	</LinearLayout>
+
+</RelativeLayout>

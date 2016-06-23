@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeaeaea"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <requestFocus />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ef_name"
+                    android:textAppearance="@style/Text_hoin_blue_16" />
+
+                <EditText
+                    android:id="@+id/name_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_width"
+                    android:hint="@string/fs_input_area_name"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_input_r"
+                    android:textAppearance="@style/Text_hoin_blue_16" />
+
+                <EditText
+                    android:id="@+id/r_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_width"
+                    android:inputType="number"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="300"
+                    android:textColor="#ff999999"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/ef_set_hint"
+                android:textAppearance="@style/Text_hoin_blue_16" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/layout_width"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/drive_in_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/ef_device_into_area"
+                        android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+                    <CheckBox
+                        android:id="@+id/drive_in_cbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/login_check_btn_s"
+                        android:clickable="true"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <RelativeLayout
+                    android:id="@+id/drive_out_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/ef_device_out_area"
+                        android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+                    <CheckBox
+                        android:id="@+id/drive_out_cbx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/login_check_btn_s"
+                        android:clickable="true"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/ef_address"
+                android:textAppearance="@style/Text_hoin_blue_16" />
+
+            <EditText
+                android:id="@+id/addr_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/layout_width"
+                android:drawablePadding="5.0dip"
+                android:drawableRight="@drawable/share_table_indicator"
+                android:gravity="center_vertical"
+                android:hint="@string/loading_address"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lon"
+                    android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+                <TextView
+                    android:id="@+id/lon_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="113.54898"
+                    android:textAppearance="@style/TextAppearanceVersonCode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/lat"
+                    android:textAppearance="@style/TextAppearanceHomeSet1Lager" />
+
+                <TextView
+                    android:id="@+id/lat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22.21556"
+                    android:textAppearance="@style/TextAppearanceVersonCode" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/del_fence_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/btn_dialog"
+                android:text="@string/delete_ef"
+                android:textAppearance="@style/TextAppearanceTitleLager"
+                android:textColor="@drawable/share_color_white_white_s"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

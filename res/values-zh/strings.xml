@@ -1,0 +1,143 @@
+<resources>
+
+    <string name="app_name">酷酷宝</string>
+    <string name="version">版本：V1.3</string>
+    <string name="about">关于</string>
+    <string name="about_text" >酷酷宝儿童电话手表,\n给儿童最好的关爱！</string>
+    <string name="car_track">宝贝</string>
+    <string name="remote_control">远程控制</string>
+    <string name="history_replay">运动回放</string>
+	
+    <string-array name="refresh_table">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>45秒</item>
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+    </string-array>
+    <!-- WARNING: The values for ListPreference have to be
+    string. Using integer array will cause app crashed. -->
+    <string-array name="refresh_table_values">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>300</item>
+        <item>900</item>
+    </string-array>
+    <string name="account_manage">账户管理</string>
+    <string name="remote_disarm">远程撤防</string>
+    <string name="remote_fortify">远程设防</string>
+    <string name="renew_position">立即定位</string>
+    <string name="remote_recover">远程恢复油电</string>
+    <string name="remote_cutoff">远程断油电</string>
+    <string name="remote_control_menu">远程控制</string>
+    <string name="detailed_info">详细信息</string>
+    <string name="account">账户：</string>
+    <string name="password">密码：</string>
+    <string name="user_type">类型：</string>
+    <string name="person_type">用户</string>
+    <string name="device_type">设备</string>
+    <string name="team_type">车队</string>
+    <string name="your_account">你的账户</string>
+    <string name="logging_in">正在登录...</string>
+    <string name="save_password">保存密码</string>
+    <string name="auto_login">自动登录</string>
+    <string name="car_info">宝贝信息</string>
+    <string name="request_data">正在请求数据...</string>
+    <string name="refresh_time_setting">刷新时间设置</string>
+    <string name="baidu_map">[百度地图]</string>
+    <string name="google_map">[谷歌地图]</string>
+    <string name="map_type">地图类型</string>
+    <string name="refresh_time">刷新时间</string>
+    <string name="more_menu">更多</string>
+    <string name="member_list">成员列表</string>
+    <string name="start_time">起始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="all_set">确定</string>
+    <string name="cancel">取消</string>
+    <string name="all_day">全天</string>
+    <string name="state">状态：</string>
+    <string name="address">地址：</string>
+    <string name="disable_refresh">禁止刷新</string>
+    <string name="refresh_is_enabled">刷新已启用</string>
+    <string name="exit_message">确认退出？</string>
+    <string name="error_network_connection">网络连接异常！</string>
+    <string name="loading">正在加载...</string>
+    <string name="server_error">服务器异常</string>
+    <string name="refresh_is_disabled">刷新已禁用</string>
+    <string name="refresh_period_single">单车跟踪刷新时间</string>
+    <string name="refresh_period_team">多车监控刷新时间</string>
+    <string name="refresh_setting">刷新设置</string>
+    <string name="unset">未设置</string>
+    <string name="type">类型：</string>
+    <string name="device">设备：</string>
+    <string name="perform_set">正在应用设置...</string>
+    <string name="successful">成功</string>
+    <string name="failed">失败</string>
+    <string name="lng_lat">经纬度：</string>
+    <string name="empty_account">帐号不能为空！</string>
+    <string name="empty_password">密码不能为空！</string>
+    <string name="error_wrong_password">密码错误！</string>
+    <string name="error_network_state">网络状态异常！</string>
+    <string name="downloading">正在下载...</string>
+    <string name="person_track_title">人员跟踪</string>
+    <string name="person_track">人员\n跟踪</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="team_track_title">定位</string>
+    <string name="no_record">该时间段无记录</string>
+    <string name="picture_saving">Saving picture...</string>
+    <string name="picture_downloading">Downloading picture....</string>
+    <string-array name="car_alarm">
+        <item>电量不足</item>
+        <item>宝贝被移动</item>
+        <item>SOS报警</item>
+        <item>车门被打开</item>
+        <item>主电池被断开</item>
+        <item>震动报警</item>
+        <item>超速报警</item>
+        <item>跌倒报警</item>
+        <item>SIM卡损坏</item>
+        <item>停车报警</item>
+        <item>安全距离报警</item>
+        <item>室内超时报警</item>
+        <item>离家超时报警</item>
+    </string-array>
+    
+    <string-array name="car_state">
+        <item>离线</item>
+        <item>在线</item>
+        <item>其他</item>
+        
+    </string-array>
+    <string name="unregistered">未登记</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="stop">静止</string>
+    <string name="running">运动</string>
+    <string name="arrears">欠费</string>
+    <string name="error_fail_load">加载失败</string>
+    <string name="error_no_member">没有成员</string>
+    <string name="day">天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="picture_upload_failed">Failed to upload picture.</string>
+    <string name="lock_position">锁定\n位置</string>
+    <string name="reselect_date">请重新选择日期</string>
+    <string name="select_map_title">地图选择</string>
+    <string name="error_no_google_service">本机未安装谷歌服务！</string>
+    <string name="yes">确定</string>
+    <string name="exit">退出</string>
+    <string name="select_member">请选择成员</string>
+    <string name="my_location">我的位置</string>
+    <string name="my_imei">本机IMEI号:</string>
+    <string name="phone_number">本机号码:</string>
+    <string name="positioning">正在定位...</string>
+    <string name="translating">正在解析地址...</string>
+    <string name="my_current_location">我的当前位置:</string>
+    <string name="device_state">设备状态：</string>
+    <string name="send_cmd_done">指令下发成功，请等待设备响应...</string>
+    <string name="reset_device">重启设备</string>
+</resources>

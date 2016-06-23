@@ -1,0 +1,148 @@
+<resources>
+
+    <string name="app_name">酷酷宝</string>
+    <string name="version">Version: V1.1</string>
+    <string name="about">About</string>
+    <string name="about_text" >酷酷宝儿童电话手表\n给儿童最好的关爱</string>
+    <string name="car_track">Baby</string>
+    <string name="Baby_track">Baby Track</string>
+    <string name="remote_control">Remote Control</string>
+    <string name="history_replay">History Replay</string>
+
+    <string-array name="refresh_table">
+        <item>15sec.</item>
+        <item>30sec.</item>
+        <item>45sec.</item>
+        <item>1min.</item>
+        <item>5min.</item>
+        <item>15min.</item>
+    </string-array>
+    <!-- WARNING: The values for ListPreference have to be
+    string. Using integer array will cause app crashed. -->
+    <string-array name="refresh_table_values">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>300</item>
+        <item>900</item>
+    </string-array>
+    <string name="account_manage">Account Manage</string>
+    <string name="remote_disarm">Remote DisArm</string>
+    <string name="remote_fortify">Remote Fortify</string>
+    <string name="renew_position">Renew Position</string>
+    <string name="remote_recover">Recover Oil&amp;Power</string>
+    <string name="remote_cutoff">Cut off Oil&amp;Power</string>
+    <string name="remote_control_menu">Remote Control</string>
+    <string name="detailed_info">Detailed Info</string>
+    <string name="account">Account :</string>
+    <string name="password">Passwd. :</string>
+    <string name="user_type">Type: </string>
+    <string name="person_type">Person</string>
+    <string name="device_type">Device</string> 
+    <string name="team_type">Team</string>
+    <string name="your_account">Your Account</string>
+    <string name="logging_in">Logging in...</string>
+    <string name="save_password">SavePWD</string>
+    <string name="auto_login">AutoLogin</string>
+    <string name="car_info">Baby Info</string>
+    <string name="request_data">Requesting Data...</string>
+    <string name="refresh_time_setting">Refresh Time Setting</string>
+    <string name="baidu_map">[Baidu Map]</string>
+    <string name="google_map">[Google Map]</string>
+    <string name="map_type">Map Type</string>
+    <string name="refresh_time">Refresh Time</string>
+    <string name="more_menu">More</string>
+    <string name="member_list">Member List</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End  Time</string>
+    <string name="all_set">All Set</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_day">All Day</string>
+    <string name="state">State: </string>
+    <string name="address">Addr.: </string>
+    <string name="disable_refresh">Disable Refresh</string>
+    <string name="refresh_is_enabled">Refresh is enabled</string>
+    <string name="exit_message">Exit Now?</string>
+    <string name="error_network_connection">Abnormal Network Connection!</string>
+    <string name="loading">Loading...</string>
+    <string name="server_error">Server error</string>
+    <string name="refresh_is_disabled">Refresh is disabled</string>
+    <string name="refresh_period_single">Refresh peroid for single</string>
+    <string name="refresh_period_team">Refresh peroid for team</string>
+    <string name="refresh_setting">Refresh Setting</string>
+    <string name="unset">Unset</string>
+    <string name="type">Type :</string>
+    <string name="device">Device: </string>
+    <string name="perform_set">Perform setting...</string>
+    <string name="successful">Successful</string>
+    <string name="failed">Failed</string>
+    <string name="lng_lat">Lng.&amp;Lat.: </string>
+    <string name="empty_account">Account is not input!</string>
+    <string name="empty_password">Password is not input!</string>
+    <string name="error_wrong_password">Wrong password!</string>
+    <string name="error_network_state">Abnormal Network State!</string>
+    <string name="downloading">Downloading...</string>
+    <string name="person_track_title">Person Track</string>
+    <string name="person_track">Person\nTrack</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="team_track_title">Team Mgmt.</string>
+    <string name="no_record">No record in this period.</string>
+    <string name="picture_saving">Saving picture...</string>
+    <string name="picture_downloading">Downloading picture....</string>
+    <string-array name="car_alarm">
+        <item>LowBattery</item>
+        <item>BabyMoved</item>
+        <item>SOS</item>
+        <item>DoorOpened</item>
+        <item>LoseBattery</item>
+        <item>Quiver</item>
+        <item>OverSpeed</item>
+        <item>Tumble</item>
+        <item>BrokenSIM</item>
+        <item>Stop</item>
+        <item>SafeDistance</item>
+        <item>IndoorOvertime</item>
+        <item>OutdoorOvertime</item>
+    </string-array>
+    
+    <string-array name="car_state">
+        <item>Disarm</item>
+        <item>Fortified</item>
+        <item>Accelerograph-OFF</item>
+        <item>DoorOpened</item>
+        <item>ACC-ON</item>
+        <item>LosePower</item>
+    </string-array>
+    <string name="unregistered">Unregistered</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="stop">Stop</string>
+    <string name="running">Running</string>
+    <string name="arrears">Arrears</string>
+    <string name="error_fail_load">Failed to load.</string>
+    <string name="error_no_member">There is no any member.</string>
+    <string name="day">day</string>
+    <string name="hour">hr.</string>
+    <string name="minute">min.</string>
+    <string name="second">sec.</string>
+    <string name="picture_upload_failed">Failed to upload picture.</string>
+    <string name="lock_position">Lock\nPosition</string>
+    <string name="reselect_date">Please reselect date.</string>
+    <string name="select_map_title">Select Map</string>
+    <string name="error_no_google_service">Google service is not available on this phone!</string>
+    <string name="yes">Yes</string>
+    <string name="exit">Exit</string>
+    <string name="select_member">Please select member.</string>
+    <string name="my_location">My Location</string>
+    <string name="my_imei">IMEI number:</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="positioning">Positioning...</string>
+    <string name="translating">Translating address...</string>
+    <string name="my_current_location">My Current Location:</string>
+    <string name="device_state">Device State:</string>
+    <string name="send_cmd_done">Command was sent. Please wait response.</string>
+    <string name="reset_device">Reset Device</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题,您可能需要重启设备。</string>
+    
+</resources>

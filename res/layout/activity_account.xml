@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.ttxgps.gpslocation.CircleImageView
+                android:id="@+id/head_icon_iv"
+                android:layout_width="120.0dip"
+                android:layout_height="120.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/layout_width"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/nick_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_top_click_s"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/nick_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:text="@string/nickname"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/nick_name_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/nick_name_tv"
+                        android:clickable="false"
+                        android:drawablePadding="10.0dip"
+                        android:drawableRight="@drawable/share_table_indicator"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="right|center"
+                        android:text="dong"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/userid_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/main_login_id_prompt"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/userid_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/userid_tv"
+                        android:gravity="right|center"
+                        android:text="683181"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/layout_width"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/sex_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_top_click_s"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sex"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/sex_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:drawablePadding="10.0dip"
+                        android:drawableRight="@drawable/share_table_indicator"
+                        android:gravity="center"
+                        android:text="@string/man"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <RelativeLayout
+                    android:id="@+id/sign_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_click_s"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/sign_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sign"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/sign_show_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/sign_tv"
+                        android:drawablePadding="10.0dip"
+                        android:drawableRight="@drawable/share_table_indicator"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/layout_width"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/phone_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_top_click_s"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/mobile"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/phone_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/phone_tv"
+                        android:drawablePadding="10.0dip"
+                        android:drawableRight="@drawable/share_table_indicator"
+                        android:gravity="right|center"
+                        android:text="1234565"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <RelativeLayout
+                    android:id="@+id/email_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_click_s"
+                    android:padding="10.0dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/email_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/email"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/email_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/email_tv"
+                        android:drawablePadding="10.0dip"
+                        android:drawableRight="@drawable/share_table_indicator"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:text="abc@zinger.com"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+            android:id="@+id/account_ok"
+            style="@style/submit_button_style"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="@string/save"
+            android:textAppearance="@style/TextAppearanceTitleLager"
+            android:textColor="@drawable/share_color_white_white_s" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

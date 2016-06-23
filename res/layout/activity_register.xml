@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <EditText
+            android:id="@+id/account_edt"
+            style="@style/editorStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_edit_bg"
+            android:hint="@string/input_phone_email" />
+
+        <TextView
+            android:id="@+id/verCode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_resend_btn"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:paddingTop="3.0dip"
+            android:onClick="onClick"
+            android:text="@string/get_ver_code"
+            android:textColor="@color/assict_text_color" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ver_code_edt"
+        style="@style/editorStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/text_edit_bg"
+        android:hint="@string/input_ver_code" />
+    
+    <LinearLayout
+            android:id="@id/linear_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/layout_width"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/psw_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_pwd_text"
+                    android:textColor="#ff1a1a1a"
+                    android:textSize="15.0sp" />
+
+                <Button
+                    android:id="@id/main_login_account_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_del_s"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/password_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/main_login_account_del"
+                    android:layout_toRightOf="@+id/psw_tv"
+                    android:background="@null"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#ff1a1a1a"
+                    android:textColorHint="@drawable/hint"
+                    android:textSize="15.0sp" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_line2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/submit_psw_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/affirm_pwd_text"
+                    android:textColor="#ff1a1a1a"
+                    android:textSize="15.0sp" />
+
+                <Button
+                    android:id="@id/main_login_pwd_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_del_s"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/submit_pwd_edt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/main_login_pwd_del"
+                    android:layout_toRightOf="@+id/submit_psw_tv"
+                    android:background="@null"
+                    android:hint="@string/hint_password_again"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#ff1a1a1a"
+                    android:textColorHint="@drawable/hint"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/confir_btn"
+            android:onClick="onClick"
+            android:text="@string/register"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/cancel_btn"
+            android:text="@string/cancel"
+            android:onClick="onClick"
+            android:textColor="@color/tab_home_d" />
+    </LinearLayout>
+
+</LinearLayout>

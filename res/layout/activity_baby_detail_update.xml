@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/input_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/layout_width"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:textColor="@color/title_text_color"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/input_edt"
+            android:layout_alignRight="@id/input_edt"
+            android:layout_marginRight="10.0dip"
+            android:textColor="@color/title_text_color" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/submit_button_style"
+        android:layout_margin="10.0dip"
+        android:text="@string/save"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s"
+        android:visibility="gone" />
+
+</LinearLayout>

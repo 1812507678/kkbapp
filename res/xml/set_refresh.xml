@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/refresh_setting" >
+
+        <!-- android:disableDependentsState="true"
+             This attribute reverse the dependency for child. -->
+        <CheckBoxPreference
+                android:key="refresh_disable"
+                android:title="@string/disable_refresh"
+                android:summaryOn="@string/refresh_is_disabled"
+                android:summaryOff="@string/refresh_is_enabled"
+                android:disableDependentsState="true" />
+
+        <ListPreference
+            android:key="refresh_period_single"
+            android:summary="@string/unset"
+            android:title="@string/refresh_period_single"
+            android:dependency="refresh_disable"
+            android:entries="@array/refresh_table"
+            android:entryValues="@array/refresh_table_values" />
+
+        <ListPreference
+            android:key="refresh_period_team"
+            android:title="@string/refresh_period_team"
+            android:summary="@string/unset"
+            android:dependency="refresh_disable"
+            android:entries="@array/refresh_table"
+            android:entryValues="@array/refresh_table_values" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

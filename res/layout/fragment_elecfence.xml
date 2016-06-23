@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ <LinearLayout
+         android:id="@+id/layout_fence_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#884488aa"
+         android:layout_centerHorizontal="true"
+         android:visibility="invisible"
+         android:gravity="center_horizontal"
+         android:padding="4dip" >
+
+        <TextView
+            android:id="@+id/fence_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="#000000"
+            android:hint="未设置"
+            android:textSize="15sp" >
+        </TextView>
+
+       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="80.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginRight="2.0dip"
+       	android:layout_below="@+id/layout_fence_title"
+        android:background="@drawable/fencelist_root_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/fence_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fencelist_root_bg"
+            android:text="@string/ef_list_text"
+            android:textColor="@color/tab_home_d"
+           android:onClick="things"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/ef_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/add_ef_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:gravity="center"
+                android:padding="3.0dip"
+                android:text="@string/add_ef"
+                android:textColor="@color/assict_text_color"
+                 android:onClick="things"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_line2" />
+
+            <ListView
+                android:id="@+id/fence_listview"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/home_icon_line1"
+                android:scrollbars="none"
+				android:visibility="visible" >
+            
+                
+                </ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/safety_edit_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="5dp"
+         android:visibility="invisible"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/safety_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/confir_btn"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+             android:textSize="16.0sp"
+            android:text="编辑" />
+
+        <Button
+            android:id="@+id/safety_del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/confir_btn"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="16.0sp"
+            android:text="删除" />
+
+    </LinearLayout>
+
+</RelativeLayout>

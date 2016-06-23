@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/button_style"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/return_btn" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/more_menu"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/setting_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:gravity="center_vertical"
+            android:onClick="things"
+            android:padding="15dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/refresh_time"
+                android:textColor="#565656"
+                android:textSize="18sp" />
+        </LinearLayout>
+                
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#D1EEEE" />
+        
+        <LinearLayout
+            android:id="@+id/setting_map"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:gravity="center_vertical"
+            android:onClick="things"
+            android:padding="15dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_map" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/map_type"
+                android:textColor="#565656"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/current_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/baidu_map"
+                android:textColor="#565656"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+                
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#D1EEEE" />
+
+        <LinearLayout
+            android:id="@+id/setting_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:gravity="center_vertical"
+            android:onClick="things"
+            android:padding="15dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/account_manage"
+                android:textColor="#565656"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#D1EEEE" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#D1EEEE" />
+
+        <LinearLayout
+            android:id="@+id/setting_about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:gravity="center_vertical"
+            android:onClick="things"
+            android:padding="15dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/about"
+                android:textColor="#565656"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#D1EEEE" />
+    </LinearLayout>
+
+</RelativeLayout>

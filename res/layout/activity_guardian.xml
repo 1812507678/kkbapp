@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_m_layout" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_title" />
+
+        <ListView
+            android:id="@+id/guardian_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="10.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_item_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_transparent_popup"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20.0dip"
+            android:background="@drawable/popup_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <EditText
+                android:id="@+id/nick_name_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_edit_bg"
+                android:hint="@string/nick_name"
+                android:maxLength="10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip" >
+
+                <EditText
+                    android:id="@+id/phone_num_edt"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/text_edit_bg"
+                    android:hint="@string/phone_num"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <ImageView
+                    android:id="@+id/get_phone_num_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@android:drawable/stat_sys_vp_phone_call" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip" >
+
+                <Button
+                    android:id="@+id/add_confir_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/confir_btn"
+                    android:text="@string/ok"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/add_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cancel_btn"
+                    android:text="@string/cancel"
+                    android:textColor="@color/tab_home_d" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_shutdown" />
+
+</RelativeLayout>

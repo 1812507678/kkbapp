@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_top_bg"
+        android:padding="5.0dip" >
+
+        <Button
+            android:id="@id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_back_s" />
+
+        <TextView
+            android:id="@+id/query_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/list_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center"
+            android:text="@string/list"
+            android:textColor="@android:color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/map_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@id/mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10.0dip"
+                layout="@layout/map_zoom_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffebebeb"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/list_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip"
+                android:background="#ffffffff"
+                android:divider="@drawable/home_icon_line2"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

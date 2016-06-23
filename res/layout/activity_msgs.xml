@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/no_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_msg"
+            android:textColor="#ff999999"
+            android:textSize="20.0sp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+
+        <RelativeLayout
+            android:id="@+id/msg_type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/msg_type_listview"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#ff49494b"
+                android:divider="@color/assict_text_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="@color/assict_text_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
