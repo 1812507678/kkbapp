@@ -130,6 +130,8 @@ public class BabydetailFragment extends Fragment  implements OnClickListener{
 		getBaby();
 		initReceiver();
 
+		String string="aa";
+
 
 
 		return inflate;
