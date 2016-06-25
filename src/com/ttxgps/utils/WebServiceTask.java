@@ -35,6 +35,7 @@ public class WebServiceTask extends AsyncTask<String, String, String> {
 			WebService webservice = new WebService(context, methonName);
 
 			webservice.SetProperty(mlist);
+
 			data = webservice.Get(params[0],mUrl);
 			Log.e(methonName, data.toString());
 

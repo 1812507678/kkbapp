@@ -42,6 +42,7 @@ public class WebService
 		envelope.dotNet = true;
 		envelope.setOutputSoapObject(rpc);
 		(new MarshalBase64()).register(envelope);
+
 		HttpTransportSE httptransportse = new HttpTransportSE(url);
 		httptransportse.debug = true;
 		String s1;

@@ -127,13 +127,9 @@ public class BabydetailFragment extends Fragment  implements OnClickListener{
 
 		initTitle();
 		initView();
+		BabyInfoBean babyInfoBean = User.curBabys;
 		getBaby();
 		initReceiver();
-
-		String string="aa";
-		String stringa="aa";
-
-
 		return inflate;
 	}
 
@@ -576,10 +572,13 @@ public class BabydetailFragment extends Fragment  implements OnClickListener{
 	}
 
 	private void getBaby(){
+
 		CommonUtils.showProgress(getActivity(), "ÕýÔÚ¼ÓÔØ...",null);
 		LinkedList<WebServiceProperty> linkedlist = new LinkedList<WebServiceProperty>();
 		linkedlist.add(new WebServiceProperty("DeviceID",babyInfoBean.getId()));
 		linkedlist.add(new WebServiceProperty("UserID",User.id));
+
+
 		WebServiceTask wsk = new WebServiceTask("GetDeviceDetail", linkedlist, WebService.URL_OTHER,getActivity().getBaseContext(),new WebServiceResult() {
 
 			@Override
@@ -654,6 +653,8 @@ public class BabydetailFragment extends Fragment  implements OnClickListener{
 		sex = babyInfoBean.getSex();
 		initIcon();
 	}
+
+
 
 	private void unBind(boolean isAdmin) {
 		View view = LayoutInflater.from(getActivity()).inflate(R.layout.admin_unbind_popup, null);

@@ -81,8 +81,10 @@ public class MapAPP extends ShareApplication {
 		mBMapMan = new BMapManager(this);
 		//mBMapMan.init(this.mStrKey, new MyGeneralListener());
 		// 2.4.1 版本起，key不用通过此接口传入，key请写在AndroidManifest.xm的mata-data中,
-		// 详情请见官网开发指南.
+		// 详情请见官网开发指南
+
 		mBMapMan.init(new MyGeneralListener());
+		//mBMapMan.init(null);
 		LOGPATH = this.getFilesDir().getAbsolutePath() + File.separator + "log";
 		mPushAgent = PushAgent.getInstance(this);
 		mPushAgent.setDebugMode(true);
@@ -111,7 +113,6 @@ public class MapAPP extends ShareApplication {
 				MapAPP.mDemoApp.m_bKeyRight = false;
 			}
 		}
-
 	}
 
 	@Override

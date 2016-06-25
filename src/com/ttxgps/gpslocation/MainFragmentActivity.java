@@ -96,13 +96,14 @@ public class MainFragmentActivity extends FragmentActivity implements OnClickLis
 
 		viewPagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager(), fragments);
 
+
 		viewPager.setAdapter(viewPagerAdapter);
 
 
 		viewPager.setCurrentItem(PAGE_KUKUBAO);
 
 		((TextView)findViewById(R.id.buttom_sales)).setTextColor(0xff000000);
-		((ImageView)findViewById(R.id.bottom_icon_sales)).setImageResource(R.drawable.ic_pets_black_24dp);
+		((ImageView)findViewById(R.id.bottom_icon_sales)).setImageResource(R.drawable.ic_child_care_black_24dp);
 	}
 
 	private void setButton(View v) {
@@ -258,16 +259,12 @@ public class MainFragmentActivity extends FragmentActivity implements OnClickLis
 						PushAgent.getInstance(getBaseContext()).addAlias(imei,"imei");
 					if(!TextUtils.isEmpty(imsi))
 						PushAgent.getInstance(getBaseContext()).addAlias(imsi,"imsi" );
-
-
-
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
 		}).start();
-
 	}
 
 	private void hideNotification() {
@@ -324,6 +321,7 @@ public class MainFragmentActivity extends FragmentActivity implements OnClickLis
 		});
 
 	}
+
 	String deviceId;
 	private void showPassive(String content,final String command) {
 		String details = null;
@@ -345,6 +343,7 @@ public class MainFragmentActivity extends FragmentActivity implements OnClickLis
 			type = PushViewType.SETADMIN;
 		}
 		pushWindowIsVisible = true;
+
 		PushMessageManager.getInstance().show(this, type, details, new PushViewEventListener() {
 			@Override
 			public void onListener(int postion) {
@@ -353,7 +352,7 @@ public class MainFragmentActivity extends FragmentActivity implements OnClickLis
 					DevicesUtils.deleteDevice(deviceId);
 					if (User.babyslist.size() > 0) {
 						User.isGetBabyDdtail = true;
-						User.curBabys = User.babyslist.get(0);
+						User.curBabys = User.babyslist.get(User.babyslist.size()-1);
 						if (postion == 0) {
 							MainFragmentActivity.this.startActivity(new Intent(MainFragmentActivity.this, MyBabyActivity.class));
 						}
