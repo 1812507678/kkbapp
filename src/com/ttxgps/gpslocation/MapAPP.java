@@ -53,7 +53,7 @@ public class MapAPP extends ShareApplication {
 	static MapAPP mDemoApp;
 	public static String LOGPATH;
 	// 百度MapAPI的管理类
-	public BMapManager mBMapMan = null;
+	public static BMapManager mBMapMan = null;
 	public static ImageFetcher mImageWorker;
 	// 授权Key
 	// Old key [v2.1.2 and older]: http://developer.baidu.com/map/android-mobile-apply-key.htm
@@ -83,8 +83,7 @@ public class MapAPP extends ShareApplication {
 		// 2.4.1 版本起，key不用通过此接口传入，key请写在AndroidManifest.xm的mata-data中,
 		// 详情请见官网开发指南
 
-		mBMapMan.init(new MyGeneralListener());
-		//mBMapMan.init(null);
+		//mBMapMan.init(new MyGeneralListener());
 		LOGPATH = this.getFilesDir().getAbsolutePath() + File.separator + "log";
 		mPushAgent = PushAgent.getInstance(this);
 		mPushAgent.setDebugMode(true);

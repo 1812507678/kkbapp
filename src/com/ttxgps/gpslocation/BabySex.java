@@ -62,6 +62,8 @@ public class BabySex extends BaseActivity{
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		// TODO Auto-generated method stub
+
+
 		if ((keyCode == KeyEvent.KEYCODE_BACK)) {
 			Intent data = new Intent();
 			data.putExtra("sex", BabySex.this.sex_status);

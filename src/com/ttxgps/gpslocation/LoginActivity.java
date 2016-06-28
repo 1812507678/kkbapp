@@ -10,8 +10,12 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -28,11 +32,13 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.RequestParams;
 import com.palmtrends.app.ShareApplication;
 import com.palmtrends.loadimage.Utils;
 import com.ttxgps.entity.User;
+import com.ttxgps.gpslocation.MapAPP.MyGeneralListener;
 import com.ttxgps.utils.AsyncHttpUtil;
 import com.ttxgps.utils.AsyncHttpUtil.JsonHttpHandler;
 import com.ttxgps.utils.Constants;
@@ -48,10 +54,12 @@ import com.ttxgps.utils.WebServiceTask;
 import com.umeng.message.PushAgent;
 import com.umeng.message.UmengRegistrar;
 import com.umeng.update.UmengUpdateAgent;
+import com.xtst.gps.Manifest;
 import com.xtst.gps.R;
 
 public class LoginActivity extends BaseActivity implements OnClickListener{
 
+	private static final String TAG = "LoginActivity";
 	public static int userID = -1;
 	public static int deviceID = -1;
 	public static String timeZone = "China Standard Time";
@@ -87,6 +95,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+
+		doPermissionCheck();
+
+
 		PushAgent mPushAgent = PushAgent.getInstance(getBaseContext());
 		mPushAgent.enable();
 		UmengUpdateAgent.update(this);
@@ -184,6 +196,42 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 		add_listener();
 	}
 
+
+
+	private void doPermissionCheck() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+			if (this.checkSelfPermission("android.permission.READ_PHONE_STATE")
+					!= PackageManager.PERMISSION_GRANTED
+					|| this.checkSelfPermission("android.permission.ACCESS_FINE_LOCATION")
+					!= PackageManager.PERMISSION_GRANTED
+					|| this.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE")
+					!= PackageManager.PERMISSION_GRANTED) {
+
+				Log.i(TAG, "Contact permissions has NOT been granted. Requesting permissions.");
+				this.requestPermissions(new String[]{"android.permission.READ_PHONE_STATE",
+						"android.permission.ACCESS_FINE_LOCATION",
+				"android.permission.WRITE_EXTERNAL_STORAGE"},101);
+			}
+
+
+
+			//android.permission.WRITE_SETTINGS权限的特殊处理方法
+			if(!Settings.System.canWrite(this)){
+				Toast.makeText(this, "无权限，申请", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
+				intent.setData(Uri.parse("package:" + getPackageName()));
+				//intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				startActivityForResult(intent, 100);
+			}
+			else {
+				Toast.makeText(this, "有权限", Toast.LENGTH_SHORT).show();
+				MapAPP.mBMapMan.init(new MyGeneralListener());
+			}
+		}
+		else {
+			MapAPP.mBMapMan.init(new MyGeneralListener());
+		}
+	}
 
 
 	@Override
@@ -468,6 +516,46 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 		if(resultCode == 100){
 			finish();
 		}
+		if (requestCode == 100) {
+			if (Settings.System.canWrite(this)){
+				//检查返回结果
+				Toast.makeText(this, "WRITE_SETTINGS permission granted", Toast.LENGTH_SHORT).show();
+				MapAPP.mBMapMan.init(new MyGeneralListener());
+			}
+			else {
+				Toast.makeText(this, "WRITE_SETTINGS permission not granted", Toast.LENGTH_SHORT).show();
+			}
+		}
+
+
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode,
+			String[] permissions, int[] grantResults) {
+		if (requestCode==101) {
+			if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
+			{
+				Toast.makeText(this, "Permission allowed", Toast.LENGTH_SHORT).show();
+				if(!Settings.System.canWrite(this)){
+					Toast.makeText(this, "无权限，申请", Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
+					intent.setData(Uri.parse("package:" + getPackageName()));
+					//intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					startActivityForResult(intent, 100);
+				}
+				else {
+					Toast.makeText(this, "有权限", Toast.LENGTH_SHORT).show();
+					MapAPP.mBMapMan.init(new MyGeneralListener());
+				}
+			} else
+			{
+				// Permission Denied
+				Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show();
+			}
+		}
+
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 	}
 
 }
