@@ -59,4 +59,6 @@ public class GuardianAdapter extends MyBaseAdapter<GuardianBean>{
 		public TextView account;
 		public TextView mark_type;
 	}
+
+
 }

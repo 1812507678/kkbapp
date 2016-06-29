@@ -33,12 +33,12 @@ public class MainViewPagerAdapter extends FragmentStatePagerAdapter {
 		return 0;
 	}
 
-	/*@Override
+	@Override
 	public void destroyItem(ViewGroup container, int position, Object object) {
 		// TODO Auto-generated method stub
 		//super.destroyItem(container, position, object);
 	}
-	 */
+
 
 
 
